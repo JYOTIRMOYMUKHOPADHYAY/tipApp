@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.jettipapp"
-        minSdk 30
+        minSdk 25
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -24,6 +24,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
